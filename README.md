@@ -16,3 +16,4 @@ Repositório de anotações, links úteis, ferramentas acerca de React
  - React Hooks
  - Gereciando estado das aplicações com Redux
  - Testes unitários (Jest)
+ - Projeto final
