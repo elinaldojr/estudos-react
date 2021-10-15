@@ -1,7 +1,7 @@
 # estudos-react
 Repositório de anotações, links úteis, ferramentas acerca de React
 
-##Roteiro
+## Roteiro
  - HTML5 e CSS3
  - Flexbox (CSS3)
  - Responsividade
