@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.img_perfil{
+    border-radius: 50%;
+}
+
+#titulo, .subtitulo, .titulo_post{
+    color: navy;
+    margin-bottom: 15px;
+}
+
+.titulo_post{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.post{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: #fff 0 0 15px;
+    border-radius: 10px;
+    margin: 10px;
+}
