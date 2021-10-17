@@ -5,15 +5,25 @@
 }
 
 body{
-    background-color: #ddd;
+    background-color: #eee;
+    font-family: Tahoma, sans-serif;
+    margin-left: 10px;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .img_perfil{
     border-radius: 50%;
+    border: 1px solid #fff
+}
+
+#titulo{
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 #titulo, .subtitulo, .titulo_post{
-    color: navy;
+    color: #444;
     margin-bottom: 15px;
 }
 
@@ -24,9 +34,36 @@ body{
 
 .post{
     background-color: #fff;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ddd;
     box-shadow: #fff 0 0 15px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0 10px 15px 10px;
+}
+
+.imagem_post{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.conteudo_post{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color:royalblue;
+}
+
+.lista_contato{
+    list-style-type: none;
+}
+
+.lista_contato li a{
+    text-decoration: none;
+    color:royalblue;
+}
+
+.lista_contato li a:hover{
+    color:navy;
 }
