@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Justify-content</title>
+
+    <style>
+        .container{
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+        }
+
+        .item{
+            background-color: cornflowerblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .flex-start{
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+
+        .center{
+            justify-content: center;
+        }
+
+        .space-between{
+            justify-content: space-between;
+        }
+
+        .space-araund{
+            justify-content: space-around;
+        }
+
+        .space-evenly{
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h3>Flex-start</h3>
+    <section class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+    <h3>Flex-end</h3>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+    
+    <h3>Center</h3>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+    
+    <h3>Space-between</h3>
+    <section class="container space-between">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+    <hr>
+    
+    <h3>Space-araund</h3>
+    <section class="container space-araund">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+    <hr>
+    
+    <h3>Space-evenly</h3>
+    <section class="container space-evenly">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+</body>
+</html>
