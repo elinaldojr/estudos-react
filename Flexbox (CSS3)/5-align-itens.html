@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align itens</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .item{
+            background-color: cornflowerblue;
+            margin: 5px;
+            text-align: center;
+            color: white;
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+        
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+
+        .central{
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <h3>Center</h3>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+    <h3>Stretch</h3>
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+    <h3>Flex-start</h3>
+    <section class="container flex-start">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+    
+    <h3>Flex-end</h3>
+    <section class="container flex-end">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+    <h3>Baseline</h3>
+    <section class="container baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+
+    <h1>Column</h1>
+    <h3>Center</h3>
+    <section class="container column center">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+    <h3>Stretch</h3>
+    <section class="container column stretch">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+    <h3>Flex-start</h3>
+    <section class="container column flex-start">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+    
+    <h3>Flex-end</h3>
+    <section class="container column flex-end">
+        <div class="item">item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+
+    <h3>Baseline</h3>
+    <section class="container column baseline">
+        <div class="item"><br>item 1</div>
+        <div class="item">item 2 (texto exemplo um pouco maior)</div>
+        <div class="item">item 3</div>
+    </section>
+    <hr>
+    <hr>
+
+    <h1>Central (justify-content)</h1>
+    <i>Alinhamento central à tela</i>
+    <section class="container central center">
+        <div class="item">Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. </div>
+    </section>
+</body>
+</html>
