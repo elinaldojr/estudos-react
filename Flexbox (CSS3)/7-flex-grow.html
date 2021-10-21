@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-grow</title>
+
+    <style>
+        .container {
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: cornflowerblue;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .fg-3{
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Flex-grow 0</h3>
+    <div class="container">
+        <div class="item fg-0">A</div>
+        <div class="item fg-0">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-0">D</div>
+    </div>
+    <hr>
+
+    <h3>Flex-grow 1</h3>
+    <div class="container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-1">B</div>
+        <div class="item fg-1">C</div>
+        <div class="item fg-1">D</div>
+    </div>
+    <hr>
+    
+    <h3>Flex-grow 2</h3>
+    <div class="container">
+        <div class="item fg-2">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-2">C</div>
+        <div class="item fg-2">D</div>
+    </div>
+    <hr>
+
+    <h3>Flex-grow: alternados</h3>
+    <div class="container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-0">C</div>
+        <div class="item fg-3">D</div>
+    </div>
+    <hr>
+
+    <h3>Flex-grow: alternados itens com tamanhos diferentes</h3>
+    <div class="container">
+        <div class="item fg-1">A</div>
+        <div class="item fg-2">B</div>
+        <div class="item fg-0">CCCCCCCCC</div>
+        <div class="item fg-3">D</div>
+    </div>
+    <hr>
+</body>
+
+</html>

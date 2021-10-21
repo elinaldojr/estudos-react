@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Order</title>
+
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            flex: 1;
+            background-color: cornflowerblue;
+            font-size: 24px;
+            text-align: center;
+            color: white;
+            margin: 5px; 
+        }
+
+        .o-1{
+            order: 1;
+        }
+
+        .o-2{
+            order: 2;
+        }
+
+        .o-3{
+            order: 3;
+        }
+
+        .o-4{
+            order: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Order: 0</h3>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    <hr>
+
+    <h3>Order diferentes</h3>
+    <div class="container">
+        <div class="item o-2">A</div>
+        <div class="item o-4">B</div>
+        <div class="item o-1">C</div>
+        <div class="item o-3">D</div>
+        <div class="item o-3">X</div>
+    </div>
+</body>
+
+</html>
